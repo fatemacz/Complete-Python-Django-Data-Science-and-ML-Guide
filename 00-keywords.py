@@ -39,3 +39,10 @@ while	    To create a while loop
 with	    Used to simplify exception handling
 yield	    To return a list of values from a generator
 """
+
+# The del keyword is used to delete objects.
+# In Python everything is an object, so the del keyword can also be used to delete variables, lists, or parts of a list etc.
+list1 = [1, 2, 3]
+print(list1)
+del list1[1]
+print(list1)

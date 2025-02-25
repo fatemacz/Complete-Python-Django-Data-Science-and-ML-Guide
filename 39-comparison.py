@@ -32,12 +32,12 @@ print(a != b)
 
 
 # 3. Comparison operators in the conditional statements
-name = 'Alice'
+name = "Alice"
 
 if len(name) > 4:
     print("Name is longer than 4 characters")
 
-name = 'Bob'
+name = "Bob"
 
 if len(name) > 4:
     print("Name is longer than 4 characters")

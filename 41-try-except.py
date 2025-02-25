@@ -1,4 +1,31 @@
+print("Program starts...")
+try:
+    # result = 10 / 2
+    result = 10 / 0
+    # result = "abc" / 2
+except ValueError as e:
+    print(e)
+    print("Cannot convert value to integer")
+except (TypeError, ZeroDivisionError) as e:
+    print(e)
+    if type(e) == TypeError:
+        print("Cannot divide string by zero!")
+    if type(e) == ZeroDivisionError:
+        print("Cannot divide by zero!")
+# For all other exceptions (can use only except but not recommended)
+except Exception as e:  # General exception class catches all other exceptions
+    print(e)
+    print("Some error happened")
+else:
+    print(f"No Error! Result: {result}.")
+finally:
+    print("Finally block executed")
+
+print("Program continues...")
+
+# --------------------
 # 1. Different except blocks
+# --------------------
 try:
     salary = int(input("Enter salary amount: "))
     days_qty = int(input("Enter days quantity: "))
@@ -10,7 +37,9 @@ except ZeroDivisionError:
     print("Cannot divide by zero!")
 
 
+# --------------------
 # 2. One except block with different error types
+# --------------------
 try:
     salary = int(input("Enter salary amount: "))
     days_qty = int(input("Enter days quantity: "))
@@ -25,7 +54,9 @@ except (ValueError, ZeroDivisionError) as e:
         print("Cannot divide by zero")
 
 
+# --------------------
 # 3. General exception class and different actions depending on the error type
+# --------------------
 try:
     salary = int(input("Enter salary amount: "))
     days_qty = int(input("Enter days quantity: "))
@@ -40,7 +71,9 @@ except Exception as e:
         print("Cannot divide by zero")
 
 
+# --------------------
 # 4. General exception class
+# --------------------
 try:
     salary = int(input("Enter salary amount: "))
     days_qty = int(input("Enter days quantity: "))
@@ -54,7 +87,9 @@ except Exception as e:
     print(isinstance(e, ZeroDivisionError))
 
 
+# --------------------
 # 5. No error context (NOT RECOMMENDED)
+# --------------------
 try:
     salary = int(input("Enter salary amount: "))
     days_qty = int(input("Enter days quantity: "))
@@ -64,7 +99,9 @@ except:
     print("Some error happened")
 
 
+# --------------------
 # 6. else and finally blocks
+# --------------------
 try:
     salary = int(input("Enter salary amount: "))
     days_qty = int(input("Enter days quantity: "))
@@ -81,7 +118,9 @@ finally:
     print("Salary operation calculation complete")
 
 
+# --------------------
 # 7. Handling file not found error
+# --------------------
 try:
     file = open("file.txt", "r")
 except FileNotFoundError as e:
@@ -89,7 +128,7 @@ except FileNotFoundError as e:
 else:
     print("File is ready for reading")
 finally:
-    if 'file' in globals() and file and not file.closed:
+    if "file" in globals() and file and not file.closed:
         file.close()
         print("File was closed.")
         print(file.closed)
