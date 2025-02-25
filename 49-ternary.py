@@ -1,3 +1,7 @@
+# Ternary Expression:
+#       Expression1 if Condition else Expression2
+
+
 # 1. Assigning result of the ternary expression to a variable
 user_is_active = True
 
@@ -41,7 +45,12 @@ print(data)
 
 # 5. Calculate grades in the function using ternary operator
 def get_letter_grade(score):
-    letter_grade = 'A' if score >= 90 else 'B' if score >= 80 else 'C' if score >= 70 else 'D' if score >= 60 else 'F'
+    letter_grade = (
+        "A"
+        if score >= 90
+        else "B" if score >= 80 else "C" if score >= 70 else "D" if score >= 60 else "F"
+    )
+
     return letter_grade
 
 

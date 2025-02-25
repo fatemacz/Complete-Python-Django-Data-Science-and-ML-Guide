@@ -12,7 +12,7 @@ print("Timer is up!")
 
 
 # 2. Asking user for the username in the "while" loop
-username = ''
+username = ""
 
 while not username:
     entered_username = input("Please enter your username: ")
