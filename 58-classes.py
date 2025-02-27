@@ -28,7 +28,7 @@ class User:
         print(f"User {self.username} has email {self.email}")
 
 
-first_user = User("Aye123", "Aye@gmail.com")
+first_user = User("Aye123", "aye@gmail.com")
 first_user.info()
 print(first_user.username)
 print(first_user.email)
@@ -41,6 +41,11 @@ print(other_user.__dict__)
 
 other_user.username = "a6363"
 print(other_user.username)
+
+# # not good practice. just for demonstration
+# other_user.address = "123 Main St"
+# print(other_user.address)
+# print(other_user.__dict__)
 
 
 # 3. Methods
@@ -64,7 +69,7 @@ my_post.like()  # recommended
 my_post.like()
 print(my_post.likes_qty)
 
-Post.like(my_post)  # not recommended
+Post.like(my_post)  # not recommended, just for demonstration
 print(my_post.likes_qty)
 
 
@@ -89,8 +94,14 @@ class Post:
         return f"Post title: {title}\n" f"Post content: {content}"
 
 
-formatted_post = Post.format_post("Some post title", "Post contents")
+formatted_post = Post.format_post("Some post title", "Post contents")  # recommended
 print(formatted_post)
+print(type(formatted_post))
+
+# # not recommended for static methods, also not possible without @staticmethod decorator
+# my_post = Post("My first post", "Some post content", "Aye")
+# formatted_post = my_post.format_post("Some post title", "Post contents")
+# print(formatted_post)
 
 
 # 5. Class with just static methods
@@ -122,7 +133,7 @@ print(Calculator.divide(20, 10))
 
 # 6. Class attributes
 class User:
-    users_qty = 0
+    users_qty = 0  # class attribute
 
     def __init__(self, username, email):
         self.username = username
@@ -131,22 +142,27 @@ class User:
 
 
 first_user = User("bob234", "bob@bob.com")
+print(f"first_user.users_qty: {first_user.users_qty}")
+print(f"User.users_qty: {User.users_qty}")
+print()
+
 second_user = User("alice356", "alice@alice.com")
+print(f"second_user.users_qty: {second_user.users_qty}")
+print(f"User.users_qty: {User.users_qty}")
+print(second_user.__dict__)  # users_qty is not in the instance dictionary
+print(User.__dict__)  # users_qty is in the class dictionary
+print()
+
 third_user = User("john324", "john@john.com")
+print(f"third_user.users_qty: {third_user.users_qty}")
+print(f"User.users_qty: {User.users_qty}")
+print()
 
-print(second_user.__dict__)
-print(User.__dict__)
-
-print(User.users_qty)
-print(third_user.users_qty)
-
+print("Assigning users_qty of 10 to third_user")
 third_user.users_qty = 10
-print(User.users_qty)  # 3
-print(third_user.users_qty)  # 10
-print(third_user.__dict__)
-
-
-# {'username': 'john324', 'email': 'john@john.com', 'users_qty': 10}
+print(f"User.users_qty: {User.users_qty}")  # 3
+print(f"third_user.users_qty: {third_user.users_qty}")  # 10
+print(third_user.__dict__)  # users_qty is now in the instance dictionary
 
 
 # 7. Magic methods
@@ -161,9 +177,9 @@ class Post:
         return self.title == other.title
 
 
-first_post = Post("This is first post")
-second_post = Post("This is second post")
-same_post_as_first = Post("This is first post")
+first_post = Post("This is first post.")
+second_post = Post("This is second post.")
+same_post_as_first = Post("This is first post.")
 
 print(first_post + second_post)
 
@@ -177,6 +193,9 @@ class User:
         self.username = username
         self.email = email
 
+    def login(self):
+        return print(f"User {self.username} is logged in!")
+
 
 class AdminUser(User):
     def __init__(self, username, email, role):
@@ -184,9 +203,18 @@ class AdminUser(User):
         self.role = role
         self.is_admin = True
 
+    def approve_post(self):
+        return print("Post approved!")
+
+    # def __str__(self):
+    #     return f"User {self.username} has email {self.email}"
+
 
 my_admin = AdminUser("admin123", "admin@admin.com", "Administrator")
 print(my_admin)
+my_admin.login()  # from parent class: User
+my_admin.approve_post()  # from AdminUser class
+
 print(type(my_admin))
 print(isinstance(my_admin, AdminUser))
 print(isinstance(my_admin, User))
@@ -199,4 +227,6 @@ my_user = User("bob234", "bob@bob.com")
 print(my_user.__dict__)
 
 print(User.__subclasses__())  # [<class '__main__.AdminUser'>]
+print()
+
 print(object.__subclasses__())

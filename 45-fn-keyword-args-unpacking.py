@@ -30,7 +30,7 @@ def create_user(username, email, password):
 
 user_details = {
     "username": "Aye-123",
-    "email": "Aye@gmail.com",
+    "email": "aye@gmail.com",
     "password": "Aye1341513",
 }
 

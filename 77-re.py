@@ -35,7 +35,7 @@ def validate_email(email):
     return email, is_valid
 
 
-print(validate_email("Aye@gmail.com"))  # Valid
+print(validate_email("aye@gmail.com"))  # Valid
 print(validate_email("Ayegmail.com"))  # Invalid
 print(validate_email("Aye@gmailcom"))  # Invalid
 

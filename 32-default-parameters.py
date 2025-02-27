@@ -56,6 +56,6 @@ send_email(
     "someone@gmail.com",
     "admin@test.com",
     urgency="not urgent",
-    bcc="Aye@gmail.com",
+    bcc="aye@gmail.com",
     img="test.png",
 )

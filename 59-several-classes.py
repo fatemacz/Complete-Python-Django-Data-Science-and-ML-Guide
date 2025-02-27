@@ -46,12 +46,12 @@ class Forum:
 
 forum = Forum()
 
-Aye = forum.register_user("Aye123", "b@gmail.com")
+aye = forum.register_user("Aye123", "aye@gmail.com")
 alice = forum.register_user("alice643", "a@a.com")
 
 print(forum.users)
 
-forum.create_post("My first post", "Post content", Aye)
+forum.create_post("My first post", "Post content", aye)
 
 print(forum.posts)
 # Now you should NOT search for posts like that. Use find_posts_by_author!
@@ -63,10 +63,10 @@ print(forum.posts)
 print(forum.find_user_by_username("admin12"))  # None
 print(forum.find_user_by_username("Aye123").email)  # b@gmail.com
 
-forum.create_post("Second great post", "Post content", Aye)
+forum.create_post("Second great post", "Post content", aye)
 
 # Find posts of the user
-found_posts = forum.find_posts_by_author(Aye)
+found_posts = forum.find_posts_by_author(aye)
 found_posts_titles = [post.title for post in found_posts]
 print(found_posts_titles)
 
