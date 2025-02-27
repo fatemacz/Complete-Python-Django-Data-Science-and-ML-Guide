@@ -2,6 +2,6 @@ def hello(name):
     return f"Hello {name}"
 
 
-print('UTILS')
+print("UTILS")
 
-my_name = 'Bogdan'
+my_name = "Aye"

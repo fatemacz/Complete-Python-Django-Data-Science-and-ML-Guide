@@ -29,9 +29,9 @@ def create_user(username, email, password):
 
 
 user_details = {
-    "username": "bogdan-123",
-    "email": "bogdan@gmail.com",
-    "password": "bogdan1341513",
+    "username": "Aye-123",
+    "email": "Aye@gmail.com",
+    "password": "Aye1341513",
 }
 
 created_user = create_user(**user_details)

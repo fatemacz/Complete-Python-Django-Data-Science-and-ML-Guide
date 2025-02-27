@@ -26,14 +26,14 @@ send_email("test@test.com", "Hello there!")
 print("_______")
 send_email("test@test.com", "Hello there!", "other@test.com", "someone@gmail.com")
 print("_______")
-send_email("test@test.com", "Hello there!", bcc="bogdan@gmail.com", img="test.png")
+send_email("test@test.com", "Hello there!", bcc="Aye@gmail.com", img="test.png")
 print("_______")
 send_email(
     "test@test.com",
     "Hello there!",
     "other@test.com",
     "someone@gmail.com",
-    bcc="bogdan@gmail.com",
+    bcc="Aye@gmail.com",
     img="test.png",
 )
 print("_______")

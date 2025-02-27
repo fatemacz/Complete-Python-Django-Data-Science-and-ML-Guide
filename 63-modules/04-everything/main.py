@@ -1,7 +1,7 @@
 from utils import *
 
-my_name = 'Alice'
+my_name = "Alice"
 
 print(dir())
-print(hello('Bogdan'))
+print(hello("Aye"))
 print(my_name)

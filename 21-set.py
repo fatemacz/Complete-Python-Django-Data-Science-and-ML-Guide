@@ -39,7 +39,7 @@ print(type(my_set))
 # ----------------------
 # Set is mutable, but it cannot contain mutable objects.
 my_set = {
-    {"name": "Bogdan", "age": 30},
+    {"name": "Aye", "age": 30},
     {"name": "John", "age": 25},
 }  # TypeError: unhashable type: 'dict'
 my_set = {{1, 2, 3}, {4, 5, 6}}  # TypeError: unhashable type: 'set'

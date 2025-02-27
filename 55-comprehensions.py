@@ -38,7 +38,7 @@ print(fruits_length)
 # -------------------------
 # 3. Tuple comprehension
 # -------------------------
-names = ["Bogdan", "Alice", "Bob"]
+names = ["Aye", "Alice", "Bob"]
 
 # Using only parentheses will be a generator
 names_lengths = tuple(len(name) for name in names)
@@ -68,7 +68,7 @@ print(grade_dict)
 # -------------------------
 # 6. Dictionary to a list using comprehension
 # -------------------------
-person = {"name": "Bogdan", "favorite_num": 777, "is_instructor": True}
+person = {"name": "Aye", "favorite_num": 777, "is_instructor": True}
 
 person_str_values = [value for value in person.values() if type(value) == str]
 print(person_str_values)

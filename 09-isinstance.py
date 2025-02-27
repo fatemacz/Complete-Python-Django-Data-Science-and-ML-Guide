@@ -7,10 +7,10 @@ print(
 print(isinstance(777, str))  # False
 print()
 
-print(isinstance("Bogdan", str))
+print(isinstance("Aye", str))
 
 print(
-    isinstance("Bogdan", object)
+    isinstance("Aye", object)
 )  # In Python, all objects are the instance of object root class
 
 print(type(object))  # <class 'type'>

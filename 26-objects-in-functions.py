@@ -8,7 +8,7 @@ def print_fruits_info(person_name, fruits):
         print(f"{person_name} likes {fruit}")
 
 
-my_name = "Bogdan"
+my_name = "Aye"
 favorite_fruits = ["oranges", "apples", "bananas"]
 print(favorite_fruits)
 
@@ -27,7 +27,7 @@ print(favorite_fruits)
 #         print(f"{person_name} likes {fruit}")
 
 
-# my_name = "Bogdan"
+# my_name = "Aye"
 # favorite_fruits = ["oranges", "apples", "bananas"]
 # print(f"favorite_fruits b4 func call: {favorite_fruits} with id: {id(favorite_fruits)}")
 
@@ -49,7 +49,7 @@ def print_fruits_info(person_name, fruits):
 
 
 favorite_fruits = ["oranges", "apples", "bananas"]
-my_name = "Bogdan"
+my_name = "Aye"
 print(my_name)
 
 print_fruits_info(my_name, favorite_fruits)
@@ -71,7 +71,7 @@ print(my_name)
 
 
 # favorite_fruits = ["oranges", "apples", "bananas"]
-# my_name = "Bogdan"
+# my_name = "Aye"
 # print(f"my_name b4 func call: {my_name} with id: {id(my_name)}")
 
 # print_fruits_info(my_name, favorite_fruits)
@@ -92,7 +92,7 @@ def print_fruits_info(person_name, fruits):
     return fruits_copy
 
 
-my_name = "Bogdan"
+my_name = "Aye"
 favorite_fruits = ["oranges", "apples", "bananas"]
 print(favorite_fruits)
 new_favorite_fruits = print_fruits_info(my_name, favorite_fruits)
@@ -114,7 +114,7 @@ print(favorite_fruits)
 #         print(f"{person_name} likes {fruit}")
 
 
-# my_name = "Bogdan"
+# my_name = "Aye"
 # favorite_fruits = ["oranges", "apples", "bananas"]
 # print(f"favorite_fruits b4 func call: {favorite_fruits} with id: {id(favorite_fruits)}")
 # print_fruits_info(my_name, favorite_fruits)

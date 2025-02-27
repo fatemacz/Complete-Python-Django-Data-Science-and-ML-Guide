@@ -64,7 +64,7 @@ print(f"my_list_copy    : {my_list_copy} with id: {id(my_list_copy)}")
 # ----------------------------
 # dict
 # ----------------------------
-my_dict = {"name": "Bogdan", "age": 30}
+my_dict = {"name": "Aye", "age": 30}
 print(f"my_dict         : {my_dict} with id: {id(my_dict)}")
 
 # my_dict_copy_ref references the same memory address as my_dict
@@ -76,7 +76,7 @@ my_dict_copy = my_dict.copy()
 print(f"my_dict_copy    : {my_dict_copy} with id: {id(my_dict_copy)}")
 
 # same value, but different memory address
-my_other_dict = {"name": "Bogdan", "age": 30}
+my_other_dict = {"name": "Aye", "age": 30}
 print(f"my_other_dict   : {my_other_dict} with id: {id(my_other_dict)}")
 print()
 
@@ -124,7 +124,7 @@ print(f"my_other_set   : {my_other_set} with id: {id(my_other_set)}")
 print("Shallow Copy")
 print("-------------")
 info = {
-    "name": "Bogdan",
+    "name": "Aye",
     "is_instructor": True,
     "reviews": [],
     "pref": {},
@@ -166,7 +166,7 @@ from copy import deepcopy
 print("Deep Copy")
 print("-------------")
 info = {
-    "name": "Bogdan",
+    "name": "Aye",
     "is_instructor": True,
     "reviews": [],
     "pref": {},

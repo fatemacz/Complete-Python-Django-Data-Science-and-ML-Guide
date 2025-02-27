@@ -1,4 +1,4 @@
-print('Hello Python')
+print("Hello Python")
 print("Hello Python")
 
 print(100)
@@ -20,13 +20,10 @@ print(tupl)
 print(type(tupl))
 
 print({})
-print({'name': 'Bogdan'})
-print({
-    'name': 'Bogdan',
-    'is_instructor': True
-})
+print({"name": "Aye"})
+print({"name": "Aye", "is_instructor": True})
 
-name = 'acz'
+name = "acz"
 print(dir(name))
 print(id(name))
 print(len(name))

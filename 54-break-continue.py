@@ -25,7 +25,7 @@ for num in my_list:
 
 
 # 3. "break" and "continue" in the loop
-current_usernames = ["bogdan123", "bob1", "alice75"]
+current_usernames = ["Aye123", "bob1", "alice75"]
 
 while True:
     username = input("Please enter desired username: ")

@@ -3,7 +3,7 @@ import utils as my_utils
 
 print(sum_fn(10, 2))
 
-print(my_utils.hello('Bogdan'))
+print(my_utils.hello("Aye"))
 print(my_utils.my_name)
 
 

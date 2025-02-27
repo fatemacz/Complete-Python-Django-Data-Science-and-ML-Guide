@@ -13,7 +13,7 @@ def create_new_post(post, weekday=get_weekday()):
 
 initial_post = {
     "id": 243,
-    "author": "Bogdan",
+    "author": "Aye",
 }
 
 post_with_weekday = create_new_post(initial_post)
@@ -56,6 +56,6 @@ send_email(
     "someone@gmail.com",
     "admin@test.com",
     urgency="not urgent",
-    bcc="bogdan@gmail.com",
+    bcc="Aye@gmail.com",
     img="test.png",
 )

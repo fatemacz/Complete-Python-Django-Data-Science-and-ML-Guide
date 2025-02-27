@@ -28,18 +28,18 @@ class User:
         print(f"User {self.username} has email {self.email}")
 
 
-first_user = User('bogdan123', 'bogdan@bogdan.com')
+first_user = User("Aye123", "Aye@gmail.com")
 first_user.info()
 print(first_user.username)
 print(first_user.email)
 
-other_user = User('alice3245', 'alice@alice.com')
+other_user = User("alice2345", "alice@gmail.com")
 other_user.info()
 print(other_user.username)
 print(other_user.email)
 print(other_user.__dict__)
 
-other_user.username = 'a6363'
+other_user.username = "a6363"
 print(other_user.username)
 
 
@@ -55,7 +55,7 @@ class Post:
         self.likes_qty += 1
 
 
-my_post = Post("My first post", "Some post content", "Bogdan")
+my_post = Post("My first post", "Some post content", "Aye")
 print(my_post)
 print(my_post.title)
 print(my_post.likes_qty)
@@ -86,10 +86,7 @@ class Post:
 
     @staticmethod
     def format_post(title, content):
-        return (
-            f"Post title: {title}\n"
-            f"Post content: {content}"
-        )
+        return f"Post title: {title}\n" f"Post content: {content}"
 
 
 formatted_post = Post.format_post("Some post title", "Post contents")
@@ -133,9 +130,9 @@ class User:
         User.users_qty += 1
 
 
-first_user = User('bob234', 'bob@bob.com')
-second_user = User('alice356', 'alice@alice.com')
-third_user = User('john324', 'john@john.com')
+first_user = User("bob234", "bob@bob.com")
+second_user = User("alice356", "alice@alice.com")
+third_user = User("john324", "john@john.com")
 
 print(second_user.__dict__)
 print(User.__dict__)
@@ -188,7 +185,7 @@ class AdminUser(User):
         self.is_admin = True
 
 
-my_admin = AdminUser('admin123', 'admin@admin.com', 'Administrator')
+my_admin = AdminUser("admin123", "admin@admin.com", "Administrator")
 print(my_admin)
 print(type(my_admin))
 print(isinstance(my_admin, AdminUser))
@@ -197,7 +194,7 @@ print(isinstance(my_admin, object))
 
 print(my_admin.__dict__)
 
-my_user = User('bob234', 'bob@bob.com')
+my_user = User("bob234", "bob@bob.com")
 
 print(my_user.__dict__)
 

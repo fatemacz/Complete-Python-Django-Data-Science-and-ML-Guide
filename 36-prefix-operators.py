@@ -52,7 +52,7 @@ print(+my_num)
 # ---------------------------------------------------------
 # 4. Prefix unary "not" operator
 # ---------------------------------------------------------
-my_name = "Bogdan"
+my_name = "Aye"
 
 print(my_name)
 print(not my_name)

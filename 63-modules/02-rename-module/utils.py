@@ -2,4 +2,4 @@ def hello(name):
     return f"Hello {name}"
 
 
-my_name = 'Bogdan'
+my_name = "Aye"

@@ -7,7 +7,7 @@
 # ----------------------------
 
 # statement perform """actions"""
-my_name = "Bogdan"  # statement, assigning the value to new variable
+my_name = "Aye"  # statement, assigning the value to new variable
 
 # conditional statement
 if my_name:  # expression, result is True
@@ -22,7 +22,7 @@ import datetime  # statement, importing the module
 # id() function is used to check if two variables refer to the same object
 # id() function is used to check if the object is mutable or immutable
 
-my_name = "Bogdan"
+my_name = "Aye"
 print(id(my_name))
 
 # reference to the same memory address

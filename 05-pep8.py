@@ -1,4 +1,4 @@
-print("Bogdan", 10)
+print("Aye", 10)
 
 
 def my_fn():

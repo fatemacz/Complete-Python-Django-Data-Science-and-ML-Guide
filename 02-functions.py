@@ -5,7 +5,7 @@ def hello(name):
     print("Hi there")
 
 
-hello("Bogdan")
+hello("Aye")
 print()
 hello("Alice")
 

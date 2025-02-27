@@ -44,7 +44,7 @@ my_nums[2] = 0
 print(my_nums)
 
 
-my_list = [True, None, "abc", 10, 10.5, [1, 2], {"name": "Bogdan"}]
+my_list = [True, None, "abc", 10, 10.5, [1, 2], {"name": "Aye"}]
 print(my_list)
 
 # delete element from list

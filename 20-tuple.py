@@ -41,7 +41,7 @@ print(len(screen_data))
 # This means that we can change the values of mutable objects inside the tuple.
 # However, we cannot change the tuple itself.
 
-users = ({"name": "Bogdan", "age": 30}, {"name": "John", "age": 25})
+users = ({"name": "Aye", "age": 30}, {"name": "John", "age": 25})
 print(users)
 print("tuple id: ", id(users))
 print()

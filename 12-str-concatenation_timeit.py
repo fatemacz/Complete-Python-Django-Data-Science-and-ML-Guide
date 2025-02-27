@@ -1,7 +1,7 @@
 import timeit
 
 # 1. Plus operator
-my_name = "Bogdan"
+my_name = "Aye"
 my_hobby = "running"
 time = 8
 
@@ -9,7 +9,7 @@ info = my_name + " likes " + my_hobby + " at " + str(time) + " o'clock"
 print(info)
 
 # 2. f-string (new way: 3.6+) : fastest
-my_name = "Bogdan"
+my_name = "Aye"
 my_hobby = "running"
 time = 8
 
@@ -17,7 +17,7 @@ info = f"{my_name} likes {my_hobby} at {time} o'clock"
 print(info)
 
 # 3. format string method (old way: 2.7 - 3.0)
-my_name = "Bogdan"
+my_name = "Aye"
 my_hobby = "running"
 time = 8
 

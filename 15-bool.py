@@ -26,9 +26,9 @@ print([1, 3, 2] == [1, 2, 3])  # False
 is_available = True
 print(not is_available)
 
-my_name = "Bogdan"
+my_name = "Aye"
 
-print(is_available and my_name)  # Bogdan
+print(is_available and my_name)  # Aye
 
 if is_available and my_name:
     print("Is available")

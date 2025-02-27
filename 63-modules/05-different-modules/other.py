@@ -1,6 +1,6 @@
 import utils
 
-print(utils.hello('Bogdan'))
+print(utils.hello("Aye"))
 
 
 def sum_fn(a, b):

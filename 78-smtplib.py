@@ -8,12 +8,12 @@ import smtplib
 
 my_email = EmailMessage()
 
-my_email['from'] = 'Bogdan'
-my_email['to'] = 'test@test.com'
-my_email['subject'] = "Hello from Python"
+my_email["from"] = "Aye"
+my_email["to"] = "test@test.com"
+my_email["subject"] = "Hello from Python"
 my_email.set_content("Hey! How are you doing?!")
 
-with smtplib.SMTP(host='127.0.0.1', port=2525) as smtp_server:
+with smtplib.SMTP(host="127.0.0.1", port=2525) as smtp_server:
     smtp_server.ehlo()
     # smtp_server.starttls()
     # smtp_server.login('username', 'password')
